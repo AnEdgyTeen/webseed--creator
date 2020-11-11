@@ -7,7 +7,7 @@ on:
 env:
   name: "Phasmophobia"
   comment: "Phasmophobia"
-  url: https://download181.uploadhaven.com/1/application/zip/HcVmESc44QPe6wq4wOUFaHkQMjv6bxsKHCN9LqaE.zip?key=Wt7OKj4qwzkkVyuVIfjkDg&expire=1605127909&filename=Phasmophobia.v0.176.28.zip --no-check-certificate
+  url: https://download181.uploadhaven.com/1/application/zip/HcVmESc44QPe6wq4wOUFaHkQMjv6bxsKHCN9LqaE.zip?key=Wt7OKj4qwzkkVyuVIfjkDg&expire=1605127909&filename=Phasmophobia.v0.176.28.zip
   file_name: "Phasmophobia"
   piece_size: 22 # Check the README.md for recommended piece size
       
@@ -19,7 +19,7 @@ jobs:
         run: sudo apt-get install mktorrent
         
       - name: Download file
-        run: wget -nv -O "$file_name" "$url"
+        run: wget -nv -O "$file_name" "$url" --no-check-certificate
         
       - name: Create torrent using mktorrent
         run: mktorrent -c "$comment" -l $piece_size -o "${name}.torrent" -w "$url" "$file_name"
