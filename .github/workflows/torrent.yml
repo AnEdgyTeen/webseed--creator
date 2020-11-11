@@ -7,7 +7,7 @@ on:
 env:
   name: "Phasmophobia"
   comment: "Phasmophobia"
-  url: https://uploadhaven.com/download/4d21223e5115a87ebf06e5cd42f2b0cb --no-check-certificate
+  url: https://download181.uploadhaven.com/1/application/zip/HcVmESc44QPe6wq4wOUFaHkQMjv6bxsKHCN9LqaE.zip?key=Wt7OKj4qwzkkVyuVIfjkDg&expire=1605127909&filename=Phasmophobia.v0.176.28.zip --no-check-certificate
   file_name: "Phasmophobia"
   piece_size: 22 # Check the README.md for recommended piece size
       
